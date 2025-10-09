@@ -1,8 +1,5 @@
 h1, h2, h3, h4{
   font-family: 'Montserrat', 'Merriweather';
-}
-
-h1, h2, h3, h4 {
   color: #00274C;
 }
 
@@ -45,6 +42,7 @@ header .skip {
   position: absolute;
   top: -40px;
   left: -40px;
+  color: white;
 }
 
 header .skip:focus {
@@ -80,7 +78,6 @@ nav ul li a {
   display: block;
   padding: 10px 0;
   width: 100%;
-  background-color: #00274C;
 }
 
 nav ul li a:hover {
