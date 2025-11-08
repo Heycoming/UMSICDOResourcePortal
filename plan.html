@@ -1,83 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Career Exploration</title>
 </head>
+
 <body>
     <header>
-        <img src="images/u-m_logo-horizontal-hex-reversed.png" alt="UM Logo" width="60"><br>
+        <img src="images/u-m_logo-horizontal-hex-reversed.png" class="logo" alt="UM Logo" width="60"><br>
         <a href="#maincon" class="skip">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "netCon.html">Networking & Connections</a></li>
-                <li><a href = "plan.html">Career Exploration</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="netCon.html">Networking & Connections</a></li>
+                <li><a href="plan.html" class="active">Career Exploration</a></li>
             </ul>
         </nav>
         <div style="text-align:center;">
+            <img src="images/UMSI_CCSI_061124_23.jpg" class="cover" alt="Students from all over the world taking pictures"
+                width="1000">
             <h1>Career Exploration</h1>
-            <img src="images/UMSI_CCSI_061124_23.jpg" alt="Students from all over the world taking pictures" width="1000">
         </div>
     </header>
 
     <main id="maincon">
-        <section>
+        <!-- Why a Structured Career Search Matters - Resource Card -->
+        <section class="resource-card">
             <h2>Why a Structured Career Search Matters</h2>
             <img src="images/plan1.jpg" alt="Two students during Internship" width="400">
-            <ol>
-                <li><b>Provides clarity and focus:</b> Self-awareness + Market insight + Consistent action + Reflection = a clear direction instead of scattered, random applications.</li>
-                <li><b>Embraces iteration, not permanence:</b> Paths evolve as you cycle through Explore → Target → Apply → Interview → Reflect → Adjust.</li>
-                <li><b>Builds confidence and momentum:</b> A structured approach breaks the process into manageable steps, making it less overwhelming and more achievable.</li>
-            </ol>
+            
+            <div class="resource-table">
+                <div class="resource-row">
+                    <div class="resource-number">01</div>
+                    <div class="resource-content">
+                        <h4>Provides Clarity and Focus</h4>
+                        <p>Self-awareness + Market insight + Consistent action + Reflection = a clear direction instead of scattered, random applications.</p>
+                    </div>
+                </div>
+
+                <div class="resource-row">
+                    <div class="resource-number">02</div>
+                    <div class="resource-content">
+                        <h4>Embraces Iteration, Not Permanence</h4>
+                        <p>Paths evolve as you cycle through Explore → Target → Apply → Interview → Reflect → Adjust.</p>
+                    </div>
+                </div>
+
+                <div class="resource-row">
+                    <div class="resource-number">03</div>
+                    <div class="resource-content">
+                        <h4>Builds Confidence and Momentum</h4>
+                        <p>A structured approach breaks the process into manageable steps, making it less overwhelming and more achievable.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <!-- Timeline & Planning - White Card -->
+        <section class="white-card">
             <h2>Timeline & Planning</h2>
-            <h3>Academic Year Snapshot (Reference)</h3>
-            <ul class="grid-container">
-                <li>Fall: Exploration + networking + early tech internship apps.</li>
-                <li>Winter: Main internship application wave + interview practice.</li>
-                <li>Spring: Late-cycle applications + portfolio refinement + negotiation prep.</li>
-                <li>Summer: Internship execution + reflection + gap filling.</li>
-            </ul>
-            <h3>Building a Weekly Routine</h3>
-            <ul>
-                <li>Example weekly allocation: 2 hrs exploration, 3 hrs applications, 2 hrs networking, 2 hrs portfolio, 1 hr reflection.</li>
-            </ul>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Academic Year Snapshot (Reference)</h3>
+                    <ul>
+                        <li><strong>Fall:</strong> Exploration + networking + early tech internship apps.</li>
+                        <li><strong>Winter:</strong> Main internship application wave + interview practice.</li>
+                        <li><strong>Spring:</strong> Late-cycle applications + portfolio refinement + negotiation prep.</li>
+                        <li><strong>Summer:</strong> Internship execution + reflection + gap filling.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Building a Weekly Routine</h3>
+                    <ul>
+                        <li>2 hours: Exploration</li>
+                        <li>3 hours: Applications</li>
+                        <li>2 hours: Networking</li>
+                        <li>2 hours: Portfolio work</li>
+                        <li>1 hour: Reflection</li>
+                    </ul>
+                    <p><em>Adjust based on your schedule and priorities.</em></p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay Organized</h3>
+                    <ul>
+                        <li>Use a spreadsheet to track applications</li>
+                        <li>Set weekly goals and review progress</li>
+                        <li>Schedule regular check-ins with career advisors</li>
+                        <li>Celebrate small wins along the way</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <!-- Reference Resources - Blue Card -->
+        <section class="blue-card">
             <h2>Reference Resources</h2>
-            <ul class="grid-container">
-                <li><a href="https://umich.instructure.com/courses/137916/pages/searching-for-job-and-slash-or-internship-postings" target="_blank">Job & Internship Postings</a></li>
-                <li><a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a></li>
-            </ul>
+            
+            <div class="navigation-cards">
+                <div class="nav-card">
+                    <h3>Job & Internship Postings</h3>
+                    <p>Access curated job boards and internship listings specifically for UMSI students.</p>
+                    <a href="https://umich.instructure.com/courses/137916/pages/searching-for-job-and-slash-or-internship-postings"
+                       class="nav-button" target="_blank">Explore Postings →</a>
+                </div>
+
+                <div class="nav-card">
+                    <h3>LinkedIn</h3>
+                    <p>Build your professional network, research companies, and discover opportunities through the world's largest professional platform.</p>
+                    <a href="https://www.linkedin.com/home" class="nav-button" target="_blank">Visit LinkedIn →</a>
+                </div>
+
+                <div class="nav-card">
+                    <h3>Career Development Office</h3>
+                    <p>Schedule one-on-one coaching sessions, attend workshops, and access exclusive resources through the UMSI CDO.</p>
+                    <a href="https://umich.instructure.com/courses/137916" class="nav-button" target="_blank">Get Support →</a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>International Student Considerations (If Applicable)</h2>
-            <img src="images/UMSI_MastersOrientation_081825_06.jpg" alt="New MSI students attending orientation" width="400">
-            <ul>
-                <li>CPT/OPT timing awareness (link to official university international center)</li>
-                <li>Use alumni data, job postings mentioning sponsorship, H1B historical databases.</li>
-                <li>Understanding employer sponsorship policies</li>
-                <li>Focus on unique cross-cultural insights, multilingual skills, global perspective.</li>
-            </ul>
+        <!-- International Student Considerations - White Card -->
+        <section class="white-card">
+            <h2>International Student Considerations</h2>
+            <img src="images/UMSI_MastersOrientation_081825_06.jpg" alt="New MSI students attending orientation"
+                width="400">
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Work Authorization & Timing</h3>
+                    <ul>
+                        <li>Understand CPT/OPT timing and requirements</li>
+                        <li>Visit the <a href="https://internationalcenter.umich.edu/" target="_blank">International Center</a> for official guidance</li>
+                        <li>Plan applications around authorization timelines</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Finding Sponsorship-Friendly Employers</h3>
+                    <ul>
+                        <li>Use alumni data to identify supportive companies</li>
+                        <li>Search job postings mentioning visa sponsorship</li>
+                        <li>Review H1B historical databases</li>
+                        <li>Network with international alumni in your field</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Leverage Your Unique Strengths</h3>
+                    <ul>
+                        <li>Highlight cross-cultural insights and adaptability</li>
+                        <li>Emphasize multilingual skills</li>
+                        <li>Showcase global perspective and international experience</li>
+                        <li>Connect with companies with global operations</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Content taken & modified from chatGPT with the prompt, "Design a comprehensive career exploration webpage for UMSI students that emphasizes the importance of a structured career search process. Include sections on why a structured approach matters, a suggested timeline and weekly routine for job searching, and resources for international students."
         chatGPT. (2025). chatGPT (GPT-4o) [Large language model]. -->
+
     <footer>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="100">
-    <hr>
-        <p>University of Michigan School of Information <br> <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career
-            Development Office </a></p>
+        <hr>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>UM School of Information</h3>
+                <p>105 S State St, Ann Arbor, MI 48109</p>
+                <p>Phone: (734) 764-9376</p>
+                <p>Email: <a href="mailto:umsi.info@umich.edu">umsi.info@umich.edu</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development
+                            Office</a>
+                    </li>
+                    <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0" target="_blank">Peer
+                            Tutoring & Academic Suppport</a></li>
+                    <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources?authuser=0"
+                            target="_blank">Student Support Resources</a></li>
+                    <li><a href="mailto:umsi.info@umich.edu" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://twitter.com/umsi" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/"
+                        target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/uomsi" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/umschoolofinformation/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="copyright">
+            &copy; 2025 Regents of the University of Michigan |
+            <a href="index.html" target="_blank">HOME</a>
+        </p>
     </footer>
 </body>
+
 </html>

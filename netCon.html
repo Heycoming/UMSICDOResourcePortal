@@ -1,80 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Networking & Connections</title>
 </head>
+
 <body>
     <header>
-        <img src="images/u-m_logo-horizontal-hex-reversed.png" alt="UM Logo" width="60"><br>
+        <img src="images/u-m_logo-horizontal-hex-reversed.png" class="logo" alt="UM Logo" width="60"><br>
         <a href="#maincon" class="skip">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "netCon.html">Networking & Connections</a></li>
-                <li><a href = "plan.html">Career Exploration</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="netCon.html" class="active">Networking & Connections</a></li>
+                <li><a href="plan.html">Career Exploration</a></li>
             </ul>
         </nav>
         <div style="text-align:center;">
-            <h1>Networking & Connections</h1>
-            <img src="images/umsi_careerfair.1.26.2316.jpg" alt="umsi career fair" width="700">
+            <img src="images/umsi_careerfair.1.26.2316.jpg" class="cover" alt="umsi career fair" width="700">
+            <h1>Networking & Connections <br> with Peers and Industry</h1>
         </div>
     </header>
 
     <main id="maincon">
-        <section>
+        <!-- Why Networking Matters - Resource Card -->
+        <section class="resource-card">
             <h2>Why Networking Matters</h2>
-            <img src="images/net1.jpg" alt="A group of students chatting" width="400">
-            <ol>
-                <li><b>Discover Hidden Opportunities:</b> Many internships and jobs are never publicly posted—conversations surface projects, referrals, and emerging roles earlier than job boards.</li>
-                <li><b>Accelerate Learning & Clarity:</b> Talking to practitioners helps you validate career interests, understand real skill expectations, and avoid investing time in the wrong paths.</li>
-                <li><b>Build Credibility & Support:</b> Consistent, authentic interactions create a reputation; people remember your strengths and are more likely to advocate, mentor, or collaborate with you later.</li>
-            </ol>
+            <img src="images/net1.jpg" alt="A group of students chatting" width="500">
+            
+            <div class="resource-table">
+                <div class="resource-row">
+                    <div class="resource-number">01</div>
+                    <div class="resource-content">
+                        <h4>Discover Hidden Opportunities</h4>
+                        <p>Many internships and jobs are never publicly posted—conversations surface projects, referrals, and emerging roles earlier than job boards.</p>
+                    </div>
+                </div>
+
+                <div class="resource-row">
+                    <div class="resource-number">02</div>
+                    <div class="resource-content">
+                        <h4>Accelerate Learning & Clarity</h4>
+                        <p>Talking to practitioners helps you validate career interests, understand real skill expectations, and avoid investing time in the wrong paths.</p>
+                    </div>
+                </div>
+
+                <div class="resource-row">
+                    <div class="resource-number">03</div>
+                    <div class="resource-content">
+                        <h4>Build Credibility & Support</h4>
+                        <p>Consistent, authentic interactions create a reputation; people remember your strengths and are more likely to advocate, mentor, or collaborate with you later.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <!-- Getting Started - White Card -->
+        <section class="white-card">
             <h2>Getting Started: Define Your Networking Goals</h2>
             <img src="images/net2.png" alt="A girl is interviewing another senior student" width="400">
 
-            <h3>Clarify Your Focus</h3>
-            <ul class="grid-container">
-                <li>Identify industries, roles, or companies you want to explore.</li>
-                <li>Start strong by reviewing <a href="https://docs.google.com/presentation/d/1R6azi49e7vd3ubRtdm33qG6Aq3bLBDBue7blM6pv49I/edit?usp=sharing" target="_blank">What you should know before you get start?</a> for quick, essential tips.</li>
-                <li>Determine what you want to learn or achieve from each interaction.</li>
-            </ul>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Clarify Your Focus</h3>
+                    <ul>
+                        <li>Identify industries, roles, or companies you want to explore.</li>
+                        <li>Start strong by reviewing <a
+                                href="https://docs.google.com/presentation/d/1R6azi49e7vd3ubRtdm33qG6Aq3bLBDBue7blM6pv49I/edit?usp=sharing"
+                                target="_blank">What you should know before you get start?</a> for quick, essential tips.</li>
+                        <li>Determine what you want to learn or achieve from each interaction.</li>
+                    </ul>
+                </div>
 
-            <h3>Map Your Existing Network</h3>
-            <h3>Set Weekly Micro-Goals</h3>
+                <div class="card">
+                    <h3>Map Your Existing Network</h3>
+                    <ul>
+                        <li>List professors, alumni, classmates, and family connections in your target field.</li>
+                        <li>Use LinkedIn to find UMSI alumni working in roles or companies you're curious about.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Set Weekly Micro-Goals</h3>
+                    <ul>
+                        <li>Commit to reaching out to 2-3 people per week.</li>
+                        <li>Track your outreach and follow-ups in a simple spreadsheet or note app.</li>
+                        <li>Celebrate small wins—every conversation is progress.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <!-- Tutorials and Workshops - Blue Card -->
+        <section class="blue-card">
             <h2>Useful Tutorials and Workshops Archive</h2>
-            <ul>
-                <li>Need help crafting the perfect networking email? Check out our  <a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?usp=sharing" target="_blank">Networking Outreach Email Examples</a> to learn how to make a great first impression and build meaningful connections.</li>
-                <li>Curious about how to conduct effective informational interviews? Explore <a href="https://docs.google.com/presentation/d/1QR0UA8V4d_hjHuayVbzF5_bx8d_8m3Ohvx9e5SiBodg/edit?usp=sharing" target="_blank">Informational Interviews Using the TIARA Method</a> for a structured approach to asking insightful questions and gathering valuable career insights.</li>
-            </ul>
+            
+            <div class="navigation-cards">
+                <div class="nav-card">
+                    <h3>Networking Outreach Email Examples</h3>
+                    <p>Need help crafting the perfect networking email? Learn how to make a great first impression and build meaningful connections.</p>
+                    <a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?usp=sharing" 
+                       class="nav-button" target="_blank">View Examples →</a>
+                </div>
+
+                <div class="nav-card">
+                    <h3>Informational Interviews Using the TIARA Method</h3>
+                    <p>Curious about how to conduct effective informational interviews? Explore a structured approach to asking insightful questions and gathering valuable career insights.</p>
+                    <a href="https://docs.google.com/presentation/d/1QR0UA8V4d_hjHuayVbzF5_bx8d_8m3Ohvx9e5SiBodg/edit?usp=sharing" 
+                       class="nav-button" target="_blank">Learn More →</a>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <!-- Monthly Events - White Card -->
+        <section class="white-card">
             <h2>Monthly Events & Conferences</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Career Fairs</h3>
+                    <p>Connect with top employers and explore internship and full-time opportunities at UMSI career fairs throughout the year.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Industry Panels</h3>
+                    <p>Hear from professionals in various fields about their career journeys and get insider tips on breaking into the industry.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Networking Mixers</h3>
+                    <p>Practice your networking skills in a relaxed environment with peers, alumni, and industry professionals.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px;">
+                <strong>Check the <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development Office</a> for upcoming events!</strong>
+            </p>
         </section>
 
-        <section>
+        <!-- Student Q&A - Blue Card -->
+        <section class="blue-card">
             <h2>Student Q&A</h2>
+            <div class="navigation-cards">
+                <div class="nav-card">
+                    <h3>How do I reach out to someone I don't know?</h3>
+                    <p>Start with a personalized message mentioning a shared connection or interest. Be specific about what you'd like to learn and keep it brief.</p>
+                </div>
+
+                <div class="nav-card">
+                    <h3>What if someone doesn't respond?</h3>
+                    <p>Don't take it personally! Follow up once after a week, then move on. Focus your energy on people who are responsive.</p>
+                </div>
+
+                <div class="nav-card">
+                    <h3>How do I maintain connections?</h3>
+                    <p>Send occasional updates about your progress, share relevant articles, or simply check in. Authentic relationships are built over time.</p>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Content taken & modified from chatGPT with the prompt, "Do as the previous career exploration section, but change it to the network and connections section"
         chatGPT. (2025). chatGPT (GPT-4o) [Large language model]. -->
+
     <footer>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="100">
-    <hr>
-        <p>University of Michigan School of Information <br> <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career
-            Development Office </a></p>
+        <hr>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>UM School of Information</h3>
+                <p>105 S State St, Ann Arbor, MI 48109</p>
+                <p>Phone: (734) 764-9376</p>
+                <p>Email: <a href="mailto:umsi.info@umich.edu">umsi.info@umich.edu</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development
+                            Office</a>
+                    </li>
+                    <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0" target="_blank">Peer
+                            Tutoring & Academic Suppport</a></li>
+                    <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources?authuser=0"
+                            target="_blank">Student Support Resources</a></li>
+                    <li><a href="mailto:umsi.info@umich.edu" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://twitter.com/umsi" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/"
+                        target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/uomsi" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/umschoolofinformation/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="copyright">
+            &copy; 2025 Regents of the University of Michigan |
+            <a href="index.html" target="_blank">HOME</a>
+        </p>
     </footer>
 </body>
+
 </html>

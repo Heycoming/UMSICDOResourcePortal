@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="css/html5reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Resumes</title>
 </head>
 
 <body>
   <header>
-    <img src="images/u-m_logo-horizontal-hex-reversed.png" alt="UM Logo" width="60"><br>
+    <img src="images/u-m_logo-horizontal-hex-reversed.png" class="logo" alt="UM Logo" width="60"><br>
     <a href="#maincon" class="skip">Skip to Main Content</a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resumes</a></li>
+        <li><a href="resume.html" class="active">Resumes</a></li>
         <li><a href="netCon.html">Networking & Connections</a></li>
         <li><a href="plan.html">Career Exploration</a></li>
       </ul>
@@ -30,7 +31,7 @@
       <h2>Craft a Resume that Tells Your Story</h2>
       <p>
         Your resume is often your first impression—an opportunity to highlight your unique strengths, skills, and
-        experiences to potential employers. Whether you’re starting from scratch or looking to polish an existing
+        experiences to potential employers. Whether you're starting from scratch or looking to polish an existing
         resume, these resources are here to help you every step of the way.
       </p>
       <p>
@@ -45,93 +46,170 @@
       </p>
     </section>
 
-    <section>
+    <section class="white-card">
       <h2>Resume Writing Made Easy: Steps to Success</h2>
       <img src="images/umsi_careerfair.1.26.2325.jpg" alt="A student holding her resume and talking to an hr" width="400">
-      <ol>
-        <li><strong>Download a UMSI-Approved Template:</strong> Start with a format that works—no need to design from
-          scratch.</li>
-        <li><strong>Gather Your Experiences:</strong> List jobs, internships, volunteer roles, coursework, and projects
-          most relevant to your goals.</li>
-        <li><strong>Write Impactful Bullets:</strong> Use action verbs and highlight your skills, results, and unique
-          contributions.</li>
-        <li><strong>Tailor for Each Opportunity:</strong> Customize your resume for every job or internship you pursue.
-        </li>
-        <li><strong>Review and Edit:</strong> Proofread for errors, check formatting, and ask for feedback from peers or
-          a career coach.</li>
-      </ol>
+      
+      <div class="card-grid">
+        <div class="card">
+          <h3>Download a UMSI-Approved Template</h3>
+          <p>Start with a format that works—no need to design from scratch.</p>
+        </div>
+
+        <div class="card">
+          <h3>Gather Your Experiences</h3>
+          <p>List jobs, internships, volunteer roles, coursework, and projects most relevant to your goals.</p>
+        </div>
+
+        <div class="card">
+          <h3>Write Impactful Bullets</h3>
+          <p>Use action verbs and highlight your skills, results, and unique contributions.</p>
+        </div>
+
+        <div class="card">
+          <h3>Tailor for Each Opportunity</h3>
+          <p>Customize your resume for every job or internship you pursue.</p>
+        </div>
+
+        <div class="card">
+          <h3>Review and Edit</h3>
+          <p>Proofread for errors, check formatting, and ask for feedback from peers or a career coach.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="blue-card">
       <h2>Resume Resources</h2>
-      <ul class="grid-container">
-        <li>
-          <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0"
-            target="_blank">
-            UMSI Resume Guide and Rubric
-          </a> <br>
-          Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?tab=t.0"
-            target="_blank">
-            Writing Effective Resume Bullets
-          </a> <br>
-          Learn how to describe your work and impact in ways employers notice.
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?usp=sharing" target="_blank">
-            Resume Rubric
-          </a> <br>
-          Evaluate your resume using the same criteria as UMSI's Career Development Office.
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0"
-            target="_blank">
-            Application Materials: Workshops and More
-          </a> <br>
-          Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
-        </li>
-      </ul>
+      
+      <div class="navigation-cards">
+        <div class="nav-card">
+          <h3>UMSI Resume Guide and Rubric</h3>
+          <p>Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.</p>
+          <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0" 
+             target="_blank" class="nav-button">View Guide →</a>
+        </div>
+
+        <div class="nav-card">
+          <h3>Writing Effective Resume Bullets</h3>
+          <p>Learn how to describe your work and impact in ways employers notice.</p>
+          <a href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?tab=t.0" 
+             target="_blank" class="nav-button">Learn More →</a>
+        </div>
+
+        <div class="nav-card">
+          <h3>Resume Rubric</h3>
+          <p>Evaluate your resume using the same criteria as UMSI's Career Development Office.</p>
+          <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?usp=sharing" 
+             target="_blank" class="nav-button">View Rubric →</a>
+        </div>
+
+        <div class="nav-card">
+          <h3>Application Materials: Workshops and More</h3>
+          <p>Attend a Resume Refresh workshop, review video tutorials, or access additional templates.</p>
+          <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0" 
+             target="_blank" class="nav-button">Explore Workshops →</a>
+        </div>
+      </div>
+
       <p>
         Ready for review? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"
           target="_blank">Book a resume review appointment with a CDO Career Coach</a>.
       </p>
     </section>
 
-    <section>
-      <h2>Resume FAQ</h2>
-      <img src="images/umsi_careerfair.1.26.2310.jpg" alt="Students holding their resume waiting in line" width="500">
-      <ul class="grid-container">
-        <li>
-          <strong>How long should my resume be?</strong><br>
-          For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
-        </li>
-        <li>
-          <strong>Do I need a different resume for each application?</strong><br>
-          It's wise to tailor your resume to the requirements and keywords of each opportunity.
-        </li>
-        <li>
-          <strong>Is it okay to include coursework or student projects?</strong><br>
-          Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and
-          impact.
-        </li>
-        <li>
-          <strong>How often should I update my resume?</strong><br>
-          Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
-        </li>
-      </ul>
-    </section>
+<section class="resource-card">
+  <h2>Resume FAQ</h2>
+  <!-- <h3>something</h3> -->
+  <img src="images/umsi_careerfair.1.26.2310.jpg" alt="Students holding their resume waiting in line" width="500">
+  
+  <div class="resource-table">
+    <div class="resource-row">
+      <div class="resource-number">01</div>
+      <div class="resource-content">
+        <h4>How long should my resume be?</h4>
+        <p>For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.</p>
+      </div>
+    </div>
+
+    <div class="resource-row">
+      <div class="resource-number">02</div>
+      <div class="resource-content">
+        <h4>Do I need a different resume for each application?</h4>
+        <p>It's wise to tailor your resume to the requirements and keywords of each opportunity.</p>
+      </div>
+    </div>
+
+    <div class="resource-row">
+      <div class="resource-number">03</div>
+      <div class="resource-content">
+        <h4>Is it okay to include coursework or student projects?</h4>
+        <p>Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.</p>
+      </div>
+    </div>
+
+    <div class="resource-row">
+      <div class="resource-number">04</div>
+      <div class="resource-content">
+        <h4>How often should I update my resume?</h4>
+        <p>Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page" - this was after I had asked for content for the home page.
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
 
   </main>
-    <footer>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="100">
+
+  <footer>
+    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="100">
     <hr>
-      <p>University of Michigan School of Information <br> <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career
-          Development Office </a></p>
-    </footer>
+
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>UM School of Information</h3>
+        <p>105 S State St, Ann Arbor, MI 48109</p>
+        <p>Phone: (734) 764-9376</p>
+        <p>Email: <a href="mailto:umsi.info@umich.edu">umsi.info@umich.edu</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development Office</a>
+          </li>
+          <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0" target="_blank">Peer Tutoring & Academic Suppport</a></li>
+          <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources?authuser=0" target="_blank">Student Support Resources</a></li>
+          <li><a href="mailto:umsi.info@umich.edu" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="https://twitter.com/umsi" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/uomsi" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/umschoolofinformation/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p class="copyright">
+      &copy; 2025 Regents of the University of Michigan |
+      <a href="index.html" target="_blank">HOME</a>
+    </p>
+  </footer>
 
 </body>
 
