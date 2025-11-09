@@ -11,7 +11,7 @@ p, li, a{
 p {
   font-size: 18px;
   line-height: 1.8;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 img {
@@ -22,9 +22,16 @@ img {
   height: 60%;
 }
 
+@media (min-width: 1024px) {
+  img {
+    width: 40%;
+  }
+}
+
 a:focus { 
   color: orange;
   font-size: 16px;
+  text-decoration: underline;
 }
 
 main a:hover {
@@ -89,7 +96,6 @@ nav ul {
 
 nav ul li {
   display: block;
-  /* padding: 10px 0; */
   width: auto;
   border-bottom: 3px solid white;
 }
@@ -121,8 +127,40 @@ header h1 {
   line-height: 1.4;
 }
 
+@media (min-width: 1024px){
+  nav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav ul li:hover {
+    width: auto;
+    border-bottom: none;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+  }
+}
+
 .cover {
   margin-top: 15px;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover {
+    width: 40%;
+  }
 }
 
 footer {
@@ -156,6 +194,7 @@ footer h3 {
 
 footer p {
   margin: 8px 0;
+  padding: 0;
   font-size: 14px;
 }
 
@@ -270,9 +309,6 @@ footer a:hover {
 }
 
 
-
-
-
 /* Card Grid Styles */
 .white-card {
   padding: 10px 10px;
@@ -316,7 +352,6 @@ footer a:hover {
   margin: 0;
 }
 
-/* Tablet and Desktop */
 @media (min-width: 768px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -324,7 +359,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1280px) {
   .card-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -335,10 +370,6 @@ footer a:hover {
   }
 }
 
-
-
-
-
 /* Navigation Cards */
 .blue-card {
   padding: 10px 10px;
@@ -346,8 +377,8 @@ footer a:hover {
 }
 
 .navigation-cards {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 30px;
 }
@@ -359,6 +390,11 @@ footer a:hover {
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s ease;
+  flex: 1 1 100%;
+}
+
+.blue-card a:focus {
+  color: black;
 }
 
 .nav-card:hover {
@@ -406,19 +442,16 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
-  .navigation-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+  .nav-card {
+    flex: 1 1 calc(40%);
   }
 }
 
-@media (min-width: 1024px) {
-  .navigation-cards {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+@media (min-width: 1280px) {
+  .nav-card {
+    flex: 1 1 calc(10%);
   }
 }
-
 
 
 /* Popular Resources Table */
@@ -428,7 +461,7 @@ footer a:hover {
 
 .resource-table {
   display: flex;
-  flex-direction: column;  /* 小屏幕：竖着排 */
+  flex-direction: column; 
   margin-top: 25px;
   gap: 15px;
 }
@@ -489,17 +522,16 @@ footer a:hover {
   color: #FFCB05;
 }
 
-/* 宽屏：4个卡片横向排列 */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .resource-table {
-    flex-direction: row;     /* 横向排列 */
-    flex-wrap: nowrap;       /* 不换行，强制一排 */
+    flex-direction: row;    
+    flex-wrap: nowrap;      
     gap: 20px;
   }
   
   .resource-row {
-    flex: 1;                 /* 每个卡片平均分配空间 */
-    min-width: 0;            /* 允许缩小 */
+    flex: 1;           
+    min-width: 0;      
   }
   
   .resource-number {
@@ -514,4 +546,3 @@ footer a:hover {
     font-size: 13px;
   }
 }
-
