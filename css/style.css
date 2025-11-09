@@ -243,28 +243,40 @@ footer a:hover {
   display: inline-block;
 }
 
-.social-links a:hover {
-  color: none;
+.icon-compass {
+  width: 80px;
+  height: 80px;
+  fill: #FFCB05;
 }
 
-.twitter:hover {  
-  color: #1DA1F2;
-  transition: all 0.3s ease;
+.social-links svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  transition: fill 0.3s ease;
 }
 
-.linkedin:hover {
-  color: #0077B5;
-  transition: all 0.3s ease;
+.twitter:hover svg {
+  fill: #1DA1F2;
 }
 
-.facebook:hover {
-  color: #4267B2;
-  transition: all 0.3s ease;
+.linkedin:hover svg {
+  fill: #0077B5;
 }
 
-.instagram:hover {
-  color: #E4405F;
-  transition: all 0.3s ease;
+.facebook:hover svg {
+  fill: #4267B2;
+}
+
+.instagram:hover svg {
+  fill: #E4405F;
+}
+
+@media (min-width: 768px) {
+  .social-links svg {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .copyright {
@@ -369,7 +381,6 @@ footer a:hover {
   }
 }
 
-/* Navigation Cards */
 .blue-card {
   padding: 10px 10px;
   padding-top: 0px;
