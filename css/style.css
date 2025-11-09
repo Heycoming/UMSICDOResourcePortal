@@ -200,7 +200,6 @@ footer p {
 
 footer a {
   color: white;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -545,4 +544,94 @@ footer a:hover {
   .resource-content p {
     font-size: 13px;
   }
+}
+
+
+/* 404 Error Page Styles */
+.error-404 {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin: 20px 0;
+}
+
+.error-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 120px;
+  color: #00274C;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.error-code {
+  font-size: 120px;
+  font-weight: bold;
+  color: #FFCB05;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 3px 3px 0px #00274C;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.error-title {
+  font-size: 32px;
+  color: #00274C;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.error-message {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .error-icon {
+    font-size: 150px;
+  }
+  
+  .error-code {
+    font-size: 150px;
+  }
+  
+  .error-title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .error-icon {
+    font-size: 180px;
+  }
+  
+  .error-code {
+    font-size: 180px;
+  }
+}
+
+.error-header {
+  padding: 0;
+  margin: 0;
+}
+
+.error-h1 {
+  font-size: 60px;
+  margin: 5px;
 }

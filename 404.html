@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | UMSI Career Development Resource Hub</title>
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="error-header">
+    <a href="#maincon" class="skip">Skip to Main Content</a>
+    <h1 class="error-h1">Oops! Page Not Found</h1>
+  </header>
+
+  <main id="maincon">
+    <section class="error-404">
+      <div class="error-container">
+        <div class="error-icon">
+          <i class="fas fa-compass"></i>
+        </div>
+        <h2 class="error-code">404</h2>
+        <h3 class="error-title">We Can't Find That Page</h3>
+        <p class="error-message">
+          It looks like you've ventured off the career path! The page you're looking for might have been moved, 
+          deleted, or perhaps never existed. Don't worry—even the best career journeys have unexpected detours.
+        </p>
+      </div>
+    </section>
+
+    <section class="blue-card">
+      <h2>Let's Get You Back on Track</h2>
+      
+      <div class="navigation-cards">
+        <div class="nav-card">
+          <div class="nav-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Return Home</h3>
+          <p>Head back to the main hub and start fresh.</p>
+          <a href="index.html" class="nav-button">Go Home →</a>
+        </div>
+
+        <div class="nav-card">
+          <h3>Resumes</h3>
+          <p>Build your professional resume with our templates and tips.</p>
+          <a href="resume.html" class="nav-button">View Resources →</a>
+        </div>
+
+        <div class="nav-card">
+          <h3>Networking</h3>
+          <p>Connect with professionals and grow your network.</p>
+          <a href="netCon.html" class="nav-button">Learn More →</a>
+        </div>
+
+        <div class="nav-card">
+          <h3>Career Exploration</h3>
+          <p>Discover tools to plan your future career path.</p>
+          <a href="plan.html" class="nav-button">Explore →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="white-card">
+      <h2>Need Help?</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Contact Support</h3>
+          <p>If you believe this is an error, please contact us at <a href="mailto:umsi.info@umich.edu">umsi.info@umich.edu</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Visit CDO</h3>
+          <p>Connect with the UMSI Career Development Office for personalized guidance and support.</p>
+        </div>
+
+        <div class="card">
+          <h3>Search Resources</h3>
+          <p>Use our navigation menu to find the career resources you need.</p>
+        </div>
+
+        <div class="card">
+          <h3>Report Issue</h3>
+          <p>Help us improve by reporting broken links or technical issues.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="100">
+    <hr>
+
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>UM School of Information</h3>
+        <p>105 S State St, Ann Arbor, MI 48109</p>
+        <p>Phone: (734) 764-9376</p>
+        <p>Email: umsi.info@umich.edu</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development Office</a></li>
+          <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0" target="_blank">Peer Tutoring & Academic Support</a></li>
+          <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources?authuser=0" target="_blank">Student Support Resources</a></li>
+          <li><a href="mailto:umsi.info@umich.edu" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="https://twitter.com/umsi" target="_blank" aria-label="Twitter" class="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" target="_blank" aria-label="LinkedIn" class="linkedin">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/uomsi" target="_blank" aria-label="Facebook" class="facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/umschoolofinformation/" target="_blank" aria-label="Instagram" class="instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p class="copyright">
+      &copy; <span id="year"></span> Regents of the University of Michigan |
+      <a href="index.html">HOME</a>
+    </p>
+  </footer>
+  
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

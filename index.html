@@ -169,11 +169,14 @@
 
     <hr>
     <p class="copyright">
-      &copy; 2025 Regents of the University of Michigan |
+      &copy; <span id="year"></span> Regents of the University of Michigan |
       <a href="index.html" target="_blank">HOME</a>
     </p>
   </footer>
-
+  
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 
 </body>
 
