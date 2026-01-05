@@ -5,7 +5,6 @@ A responsive, mobile-first, accessible website concept/design demo for the UMSI 
 
 **Live:** https://heycoming.github.io/UMSICDOResourcePortal/  
 
----
 
 ## Pages
 - `index.html` — Home / key resources
@@ -14,7 +13,6 @@ A responsive, mobile-first, accessible website concept/design demo for the UMSI 
 - `plan.html` — Career exploration / planning
 - `404.html` — Custom 404 page with navigation back to main sections
 
----
 
 ## Key Features
 - Mobile-first responsive design with breakpoints at **768px**, **1024px**, **1280px**
